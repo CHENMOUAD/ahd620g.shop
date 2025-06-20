@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <title>2025</title>
+    <link rel="stylesheet" href="css/t.css"> 
+</head>
+<body>
+    <div class="main-container">
+        <header class="hero-section">
+            <div class="urgent-alert">🔥 期間限定公開中 🔥</div>
+            <div class="limited-badge">今日限り特別提供</div>
+            <div class="expert-image"></div>
+            <h1 class="main-title">三橋貴明のLINE</h1>
+            <p class="subtitle">「専門市場研究週報を獲得」</p> 
+        </header>
+
+        <main class="content-area">
+            <h2 class="main-heading">市場分析資料庫を今すぐ解錠</h2>
+            <div class="instruction-block">
+                数字「9」を送信して、市場分析資料庫を即座に解錠してください。最新産業トレンド解読、上場企業公開データ分析、グローバルマクロ経済観察を含みます。
+            </div>
+            
+            <h3 class="benefits-title">📈 毎週内容：</h3>
+            <ul class="feature-listing">
+                <li class="feature-point">業界新鮮事：科技、自動車、小売等ホット領域最新動態</li>
+                <li class="feature-point">企業データ站：簡単言語で上場企業重要経営データを解読</li>
+                <li class="feature-point">政策一点通：新政策の一般投資者への実際影響を解説</li>
+                <li class="feature-point">市場可視化：図表で直観的に近期株価変化状況を展示</li>
+                <li class="feature-point">国際風向標：海外重大事件と日本株市の関連を解析</li>
+                <li class="feature-point">企業正能量：上場企業の環保、公益方面の取り組みを紹介</li>
+            </ul>
+
+            <button class="cta-button" onclick="oma()">🚀 今すぐ参加して、最新研究方法論を確認</button>
+        </main>
+
+       
+
+        <aside class="risk-section">
+            <div class="risk-header">⚠️ 重要リスク提示</div>
+            <div class="risk-text">• 本サービスは一般的な市場情報のみを提供し、いかなる投資アドバイスや推奨も構成しません</div>
+            <div class="risk-text">• 金融市場にはリスクが存在し、投資は元本の一部または全部の損失につながる可能性があります</div>
+            <div class="risk-text">• すべての展示事例は過去のデータ分析であり、将来の収益に対するいかなる保証も構成しません</div>
+            <div class="risk-text">• 投資者は自身のリスク許容能力に基づいて慎重に決定すべきです</div>
+            <div class="risk-text">• すべての情報は客観的事実陳述であり、投資推奨を構成しません</div>
+        </aside>
+
+        <footer class="footer-area">
+            <a href="privacy.html" target="_blank" class="footer-link">プライバシーポリシー</a>
+            <a href="terms.html" target="_blank" class="footer-link">利用規約</a>
+        </footer>
+    </div>
+
+    <button class="floating-btn" onclick="oma()">💡 今すぐ参加、最新研究方法確認</button>
+
+    <script>
+        function oma() {
+            window.open('https://line.me/', '_blank');
+        }
+
+        document.addEventListener('touchmove', function(event) {
+            if (event.scale !== 1) {
+                event.preventDefault();
+            }
+        }, { passive: false });
+
+        let lastTouchEnd = 0;
+        document.addEventListener('touchend', function(event) {
+            const now = (new Date()).getTime();
+            if (now - lastTouchEnd <= 300) {
+                event.preventDefault();
+            }
+            lastTouchEnd = now;
+        }, false);
+    </script>
+</body>
+</html>
